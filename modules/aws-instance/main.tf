@@ -28,11 +28,3 @@ resource "aws_instance" "app" {
 
   tags = var.tags
 }
-
-module "terraform-aws-s3-bucket-ak" {
-  source  = "app.terraform.io/policy-as-code-training/terraform-aws-s3-bucket-ak/AWS"
-  version = "1.1.0"
-  # insert required variables here
-
-  bucket_name = "ak-terraform-demo-bucket-51826"
-}
